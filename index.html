@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container" display = "flex">
+      <h1 class="logo"><img src="img\Screenshot 2024-08-23 212933.png"></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1>I'm Rayan Adlirdard</h1>
+      <h2>Front-end Developer</h2>
+      <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Et, Volutpat Feugiat Placerat Lobortis.</p>
+      <a href="#" class="btn">HIRE ME</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card -->
+        <div class="project-card">
+          <img src="project1.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>How To Make Flyer Design</h3>
+            <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit...</p>
+            <div class="tags">
+              <span>HTML</span><span>MongoDB</span><span>ReactJS</span>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other projects -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recommendations" class="recommendations-section">
+    <div class="container">
+      <h2>Recommendations</h2>
+      <div class="recommendations-carousel">
+        <!-- Recommendation Card -->
+        <div class="recommendation-card">
+          <p>Great Quality!</p>
+          <div class="stars">★★★★★</div>
+          <h4>James Gouse</h4>
+          <p>Graphic Designer</p>
+        </div>
+        <!-- Repeat for other recommendations -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Full Name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Country: Bangladesh</p>
+        <p>City: Dhaka</p>
+        <p>Street: 35 Vhatar, Badda</p>
+        <p>Email: youremail@gmail.com</p>
+        <p>Phone: +58 (021)1356 587 235</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Portfolio. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
