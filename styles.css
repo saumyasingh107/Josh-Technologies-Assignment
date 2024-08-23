@@ -28,6 +28,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    height: 153px;
   }
   
   .navbar .container {
@@ -50,7 +51,7 @@ body {
   /* Hero Section */
   .hero-section {
     text-align: center;
-    background-color: #F3F4F6;
+    background-color: #fff;
     padding: 100px 20px;
   }
   
