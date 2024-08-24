@@ -93,28 +93,40 @@ a {
 .hero-section {
   display: flex;
   background-color: #fff;
-  padding: 100px 20px;
+  h1{
+    margin:0
+  }
 }
 
 .hero-section .container {
-  font-size: 25px;
+  font-size: 24.9px;
+  margin-left: 50px;
+  padding-top: 128px;
+  padding-left: 48px;
 }
 
-
+.hero-section .girl{
+  img{
+    width: 700px;
+    padding-left: 43px;
+    padding-top: 37.5px;
+  }
+}
 .hero-section p {
-  margin: 20px 0;
-  font-size: 1.2rem;
+  font-size: 17px;;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  color: #868786;
 }
 
 .btn {
   background-color: #FACC15;
-  color: #fff;
+  color: #000;
+  margin-top: 30px;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 .btn:hover {
