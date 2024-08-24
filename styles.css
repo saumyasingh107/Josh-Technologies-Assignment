@@ -91,20 +91,15 @@ a {
 
 /* Home Section */
 .hero-section {
-  text-align: center;
+  display: flex;
   background-color: #fff;
   padding: 100px 20px;
 }
 
-.hero-section h1 {
-  font-size: 3rem;
-  font-weight: bold;
+.hero-section .container {
+  font-size: 25px;
 }
 
-.hero-section h2 {
-  font-size: 2rem;
-  color: #FACC15;
-}
 
 .hero-section p {
   margin: 20px 0;
