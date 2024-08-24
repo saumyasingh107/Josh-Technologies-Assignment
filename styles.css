@@ -34,13 +34,16 @@ a {
 
 .navbar .container .logo{
   padding-left: 90px;
-  width: 30px;
+  img{
+    width: 174px;
+  }
 }
 
 .nav-links {
+  padding-right: 100px;
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 80px;
 }
 
 .nav-links li a:hover {
