@@ -30,20 +30,21 @@ a {
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
 }
 
 .navbar .container .logo{
-  padding-left: 90px;
+  
   img{
     width: 174px;
   }
 }
 
 .nav-links {
-  padding-right: 100px;
   list-style: none;
   display: flex;
-  gap: 80px;
+  gap: 37px;
 }
 
 .nav-links li a:hover {
