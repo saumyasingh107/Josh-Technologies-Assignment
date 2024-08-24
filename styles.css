@@ -29,25 +29,60 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-left: 90px;
-  padding-right: 90px;
+  
 }
 
 .navbar .container .logo{
   
   img{
     width: 174px;
+    padding-left: 90px;
+    padding-top: 40px;
   }
 }
 
+.nav-links .home{
+  
+  margin-right: 22px;
+  padding-inline: 16px;
+}
+.nav-links .skills{
+  
+  margin-right: 7.5px;
+  padding-inline: 16px;
+}
+.nav-links .education{
+  
+  margin-right: 8.5px;
+  padding-inline: 16px;
+}
+.nav-links .projects{
+  
+  margin-right: 8.5px;
+  padding-inline: 16px;
+}
+.nav-links .recommendations{
+  
+  margin-right: 9px;
+  padding-inline: 16px;
+}
+.nav-links .contact{
+  
+  margin-right: 34px;
+  padding-inline: 16px;
+}
+
 .nav-links {
-  list-style: none;
   display: flex;
+  padding-right: 45px;
   div{
-    padding: 18px;
-    border-radius: 15px;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
   }
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 
 .nav-links div:hover {
