@@ -44,11 +44,14 @@ a {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 37px;
+  div{
+    padding: 18px;
+    border-radius: 15px;
+  }
 }
 
-.nav-links li a:hover {
-  color: #FACC15;
+.nav-links div:hover {
+  background-color: #FACC15;
 }
 
 /* Hero Section */
