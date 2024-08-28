@@ -1,0 +1,380 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.skill-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-size: 14px;
+    color: #333;
+}
+
+.skill-percentage {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: #ffd700;
+    border-radius: 5px;
+}
+
+.add-skill-btn {
+    display: block;
+    background-color: #ffd700;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 0 auto;
+    padding: 30px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none  #ddd;
+    border-radius: 2px;
+    background-color: #F0F0F6;
+}
+
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: grid;
+    gap: 10px;
+}
+.skil1{
+    width: 10px;
+}
+
+.skill-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.add-skill-btn-modal,
+.cancel-btn {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.cancel-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.skilssss {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+footer {
+    color: #333333;
+    /* Dark text color for contrast */
+    padding: 35px 90px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for separation */
+}
+
+.other-company-logo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+.our-logo img {
+    margin: 0 0 30px 0;
+    /* Spacing between the logos */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* margin-top: 20px; */
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left span {
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.footer-left img {
+    width: 80px;
+}
+
+.logo1 {
+    margin-bottom: 0;
+    width: 120px !important;
+}
+
+.logo2 {
+    margin-top: 7px;
+    width: 120px !important;
+}
+
+.logo3 {
+    margin-top: 10px;
+    width: 120px !important;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    width: 63%;
+    /* Adjust width as needed */
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinks h3 {
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.footerLinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footerLinks ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666666;
+    /* Lighter gray for additional text */
+}
+
+.footerLinks li a img {
+    width: 95px;
+    /* Adjust the size of social media icons */
+    height: 24px;
+    margin-right: 10px;
+    /* Space between icons */
+}
+
+.backgroundss {
+    background-color: #f0f1f7;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 153px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navbar .container .logo {
+
+    img {
+        width: 174px;
+        padding-left: 90px;
+        padding-top: 40px;
+    }
+}
+
+.nav-links .home {
+
+    margin-right: 22px;
+    padding-inline: 16px;
+}
+
+.nav-links .skills {
+
+    margin-right: 7.5px;
+    padding-inline: 16px;
+}
+
+.nav-links .education {
+
+    margin-right: 8.5px;
+    padding-inline: 16px;
+}
+
+.nav-links .projects {
+
+    margin-right: 8.5px;
+    padding-inline: 16px;
+}
+
+.nav-links .recommendations {
+
+    margin-right: 9px;
+    padding-inline: 16px;
+}
+
+.nav-links .contact {
+
+    margin-right: 34px;
+    padding-inline: 16px;
+}
+
+.nav-links {
+    display: flex;
+    padding-right: 45px;
+
+    div {
+        margin-top: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.nav-links div:hover {
+    background-color: #FACC15;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+}

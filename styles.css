@@ -121,13 +121,19 @@ a {
 }
 
 .btn {
+  width: 9rem;
+  height: 3rem;
   background-color: #FACC15;
-  color: #000;
   margin-top: 30px;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 15px;
+  border: none;
+  margin-top: 5rem;
+  
+  
 }
+
 
 .btn:hover {
   background-color: #F59E0B;
@@ -191,6 +197,21 @@ a {
 }
 
 /* Recommendations Section */
+
+.recommended-container {
+  width: 100%;
+  /* or whatever width fits your layout */
+  max-height: 500px;
+  /* Adjust the height as needed */
+  overflow-y: auto;
+  /* This makes the content scrollable vertically */
+  overflow-x: hidden;
+  /* This prevents horizontal scrolling */
+  padding: 10px;
+  /* Optional padding for better visual spacing */
+  box-sizing: border-box;
+  /* Includes padding and border in the width and height calculation */
+}
 .recommendations-section {
   background-color: #FFF;
   padding: 60px 20px;
@@ -236,6 +257,9 @@ a {
 .contact-section {
   padding: 60px 20px;
 }
+.job-title{
+  color: #FACC15;
+}
 
 .contact-grid {
   display: flex;
@@ -248,9 +272,9 @@ a {
 }
 
 .form-group label {
-  display: block;
   margin-bottom: 10px;
-  color: #666;
+  border: none;
+
 }
 
 .form-group input, .form-group textarea {
@@ -302,3 +326,333 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Carousel */
+.carousel {
+  position: relative;
+
+  width: 100%;
+  overflow: hiden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.carousel-inner {
+  display: flex;
+  overflow: hiden;
+  transition: transform 0.5s ease-in-out;
+  columns: 3;
+}
+
+.carousel-item {
+  min-width: 33.33%; /* Adjust to show 3 items */
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+}
+
+.carousel-control.prev {
+  left: 0;
+}
+
+.carousel-control.next {
+  right: 0;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-dots .dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+
+}
+
+.carousel-dots .dot.active {
+  background-color: #717171;
+}
+.carousel-dots .dot {
+  cursor: default; /* or use 'default' if you want the standard arrow cursor */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-right: 3rem;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+#projects{
+  display: flex;
+  justify-content: space-evenly;
+  padding: left 1rem; 
+}
+
+.recommendations{
+  
+  text-align: center
+}
+.section-title1{
+  font: bold
+
+}
+footer {
+  color: #333333;
+  /* Dark text color for contrast */
+  padding: 35px 90px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for separation */
+}
+
+.other-company-logo {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+.our-logo img {
+  margin: 0 0 30px 0;
+  /* Spacing between the logos */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* margin-top: 20px; */
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-left span {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-left img {
+  width: 80px;
+}
+
+.logo1 {
+  margin-bottom: 0;
+  width: 120px !important;
+}
+
+.logo2 {
+  margin-top: 7px;
+  width: 120px !important;
+}
+
+.logo3 {
+  margin-top: 10px;
+  width: 120px !important;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  width: 63%;
+  /* Adjust width as needed */
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLinks h3 {
+  font-size: 18px;
+  margin-bottom: 22px;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footerLinks ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+  /* Lighter gray for additional text */
+}
+
+.footerLinks li a img {
+  width: 95px;
+  /* Adjust the size of social media icons */
+  height: 24px;
+  margin-right: 10px;
+  /* Space between icons */
+}
+.backgroundss{
+  background-color: #f0f1f7;
+}
+
+
+
+.contactsection {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 2px;
+  width: 55%;
+  margin-left: 6rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.input-group {
+  color: #767676;
+  margin-bottom: 15px;
+  }
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #F0F0F6;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: #f1c40f;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d4ac0d;
+}
+
+.contact-info .info-box {
+  margin-bottom: 15px;
+}
+
+.contact-info{
+  margin-left: 2rem;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+.msg{
+  color: black;
+}
+ .contact-info {
+   width: 350px;
+   padding: 20px;
+   margin-right: 8rem;
+ }
+
+ .info-block {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   padding: 10px;
+   border-radius: 2px;
+ }
+
+ .info-block:last-child {
+   margin-bottom: 0;
+ }
+
+ .icon {
+   background-color: #ffcc00;
+   border-radius: 50%;
+   width: 25px;
+   height: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-right: 10px;
+ }
+
+ .icon img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ .info-content {
+   line-height: 1.5;
+ }
+
+ .info-content .title {
+   font-weight: bold;
+   
+   color: #555;
+   margin-bottom: 5px;
+ }
+ .info-block{
+
+   background-color: #fff;
+ }
